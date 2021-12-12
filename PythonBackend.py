@@ -7,7 +7,7 @@ from Models import Orders,FoodItems
 def getPendingOrders():
     records = []
     try:
-        connection = mysql.connector.connect(host='footballmadesimple.c18ndxpocyny.us-east-2.rds.amazonaws.com',port='3306',database='foodcourt',user='admin',password='JethroGibbs')
+        connection = mysql.connector.connect(host='',port='3306',database='foodcourt',user='',password='')
 
         if connection.is_connected():
             db_Info = connection.get_server_info()
@@ -30,7 +30,7 @@ def getPendingOrders():
 def getFoodItemsOfCertainCategory(itemCategory):
     records = []
     try:
-        connection = mysql.connector.connect(host='footballmadesimple.c18ndxpocyny.us-east-2.rds.amazonaws.com',port='3306',database='foodcourt',user='admin',password='JethroGibbs')
+        connection = mysql.connector.connect(host='',port='3306',database='foodcourt',user='',password='')
 
         if connection.is_connected():
             db_Info = connection.get_server_info()
